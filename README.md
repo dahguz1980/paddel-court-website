@@ -1,2 +1,2 @@
-# padel-court-website
+# paddel-court-website
 Paddel's Website
