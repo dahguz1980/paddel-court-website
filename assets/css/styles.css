@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/* TITLES STYLE */
+
+h1, h2,  .titleFont {
+    font-family: 'Barlow Condensed', xxss-serif
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+/* SECTION STYLE */
+section {
+    padding: 15px;
+}
+
+/* LINKs STYLE */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER STYLE */
+header img {
+    width: 150px;
+}
+
+header h1 {
+    display: inline;
+}
+
+header nav {
+    text-align: end;
+    padding: 8px;
+}
+
+
+header nav a, .lightBlue {
+    color: aliceblue;
+}
+
+header ul li,footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+
+/* FOOTER STYLE */
+
+footer div {
+    max-width: 25%;
+    display: inline-block;
+    margin: 15px;
+}
+
+footer {
+    border-top: 5px solid #F9AB2D;
+    font-size: 12px;
+}
+
+/* FORM STYLES */
+input[type=text],input[type=email], input[type=tel], select, textarea  {
+    width: 180px;
+    border: 1px solid gray;
+    height: 30px;
+    margin-top: 8px;
+}
+
+button, .button {
+    background-color: #F9AB2D;
+    padding: 8px 15px;
+    border: 0px;
+    color: #03021d;
+    font-weight: bold;
+    
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+
+/* SPECIFIC IDs STYLE */
+#container {
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: aliceblue;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.banner {
+    position: relative; 
+    height: 400px;
+    width: 1024px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::before {    
+      content: "";
+      background-image: url('../img/banner_beneficts.jpg');
+      background-size: 1024px 400px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+}
+
+.banner p {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+
+.banner div {
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    left: 640px;
+    font-weight: bold;
+}
+
+
+/* CLASSES STYLE */
+.logoSocialNetwork {
+    width: 24px;
+} 
+
+.backgroundDarkBlue {
+    background-color: #03021d;
+}
+
+.articleWithImage {
+    padding: 15px;
+}
+
+.articleWithImage img {
+    width: 100%;
+}
+
+.articleWithImage div {
+    max-width: 49%;
+    display: inline-block;
+}
+
+.articleWithImage div p {
+    margin-top: 20px;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.articleBox {
+    display: inline-block;
+    margin: 15px;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+}
+
+.articleBox img {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.articleBox p {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+}
+
+.articleBox.articleBox-s {
+    max-width: 250px;
+    height: 80px;
+}
+
+.articleBox.articleBox-m {
+    max-width: 360px;
+    height: 115px;
+}
+
+.articleBox.articleBox-sm {
+    max-width: 250px;
+    height: 210px;
+}
+
+.articleBox.articleBox-l {
+    max-width: 99%;
+    height: 230px;
+    padding: 15px;
+}
+
+.articleBox.articleBox-m.articleBox-shadow, .articleBox.articleBox-s.articleBox-shadow, .articleBox.articleBox-l.articleBox-shadow,
+.articleBox.articleBox-sm.articleBox-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.articleBox.articleBox-s p {
+    max-width: 200px;
+}
+
+.articleBox.articleBox-m p {
+    max-width: 295px;
+}
+
+article .professor {
+    width: 150px;
+}
+
+.table {
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 0.9em;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table  thead tr {
+    background-color: #F9AB2D;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+section .gallery {
+    display: inline-block;
+    margin: 20px;
+}
+
+section .gallery img, section .gallery iframe {
+    width: 231px;
+    height: 231px;
+}
+
+section .contact-form  {
+    display: inline-block;
+    max-width: 400px;
+    position: absolute;
+}
+
+section .contact-form input[type=text],input[type=email], input[type=tel], select, textarea  {
+        width: 400px;
+        margin: 10px;
+
+}
+
+section .contact-form textarea {
+    height: 200px;
+}
+
+
+section .contact-form {
+    text-align: center;
+}
+
