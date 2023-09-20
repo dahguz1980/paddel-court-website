@@ -14,12 +14,10 @@
 </head>
 <body>
     <div id="content">
-        <div id="logo">
-            <img src="./assets/img/logo.png" alt="Logo Paddel Court">
-        </div>
-        <header>
+
+        <header class="d-flex flex-row justify-content-evenly">
             <img src="./assets/img/banner_index.png" alt="Beneficios del Padel">
-            <div class="bannerDetail">
+            <div class="d-flex flex-column justify-content-evenly align-items-center w-30 text-center fw-bold">
                 <p>El pádel no solo es un deporte, sino un estilo de vida que nos brinda innumerables beneficios.
                     Con cada movimiento en la cancha, fortalecemos nuestro cuerpo y mente.
                 </p>
@@ -27,59 +25,74 @@
             </div>
         </header>
         <nav class="navbar">
+            <img src="./assets/img/logo.png" alt="Logo Paddel Court">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <span class="material-symbols-rounded d-inline-block align-text-bottom" width="30" height="24">home</span>
+                <span class="material-symbols-rounded d-inline-block align-text-bottom" >home</span>
                 <span>Inicio</span>
               </a>
             </div>
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom" width="30" height="24" class="">rule</span>
+                    <span class="material-symbols-rounded d-inline-block align-text-bottom" >rule</span>
                     <span>Reglas</span>
                 </a>
               </div>
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom" width="30" height="24" class="">new_releases</span>
+                    <span class="material-symbols-rounded d-inline-block align-text-bottom">new_releases</span>
                     <span>Consejos y Técnicas</span>
                 </a>
               </div>
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom" width="30" height="24" class="">sports_tennis</span>
+                    <span class="material-symbols-rounded d-inline-block align-text-bottom">sports_tennis</span>
                     <span>Clases</span>
                 </a>
               </div>
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom" width="30" height="24" class="">imagesmode</span>
+                    <span class="material-symbols-rounded d-inline-block align-text-bottom">imagesmode</span>
                     <span>Galería</span>
                 </a>
               </div>
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom" width="30" height="24" class="">alternate_email</span>
+                    <span class="material-symbols-rounded d-inline-block align-text-bottom">alternate_email</span>
                     <span>Contacto y Reservas</span>
                 </a>
               </div>
 
           </nav>
-        <div id="section1"></div>
+        <section id="section1">
+            <article class="d-flex flex-row">
+                <div class="w-50 p-3">
+                    <img src="./assets/img/paddel_question.jpg" alt="Padel" class="object-fit-fill border rounded-2">
+                </div>
+                <div class="w-50 p-3 d-flex flex-column justify-content-evenly">
+                    <h2 class="text-center">¿Qué es el Pádel?</h2>
+                    <p>El pádel es un apasionante deporte que combina elementos del tenis y del squash, jugado en una
+                        cancha más pequeña y rodeada por paredes. Dos equipos, generalmente compuestos por dos jugadores
+                        cada uno, se enfrentan en una intensa batalla por hacer rebotar una pelota de goma contra las
+                        paredes de la cancha, utilizando raquetas especialmente diseñadas. La estrategia, la
+                        comunicación entre compañeros y los rápidos intercambios hacen del pádel un deporte dinámico y
+                        emocionante que promueve tanto la condición física como la agudeza mental. Sus reglas sencillas
+                        y su accesibilidad lo convierten en una actividad popular para personas de todas las edades y
+                        niveles de habilidad.</p>
+
+                    <p>El pádel no solo es un desafío atlético, sino también un medio para construir relaciones
+                        sociales y unir a las comunidades. Con una creciente base de seguidores en todo el mundo, este
+                        deporte ha trascendido las fronteras y ha dejado una huella significativa en la cultura
+                        deportiva. Su enfoque en la diversión, la competencia amistosa y el trabajo en equipo lo
+                        convierten en mucho más que un juego; es una experiencia enriquecedora que une a las personas a
+                        través de la emoción compartida y la pasión por el juego.</p>
+                </div>
+            </article>
+        </section>
         <div id="section2"></div>
         <div id="section3"></div>
         <div id="aside"></div>
-        <div id="social">
-            <ul class="socialNetwork">
-                <li><a href="https://web.facebook.com/dahguz" target="_blank"><img src="./assets/img/facebookLogo.png"
-                            alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/dahguzmania/" target="_blank"><img
-                            src="./assets/img/instagram_logo.png" alt="Instagram"></a></li>
-                <li><a href="https://www.twitter.com/dahguz" target="_blank"><img
-                            src="./assets/img/x_logo.png" alt="X"></a></li>
-            </ul>
-        </div>
-        <footer>
+        <footer class="d-flex flex-row align-items-center">
             <div class="container text-center">
                 <div class="row  align-items-start">
                     <div class="col-4">
@@ -97,13 +110,21 @@
                     </div>
                     <div class="col-4">
                         
-                        <p>¡Conéctate con nosotros! Visítanos en Pedro Fontova # 6, Santiago, Región Metropolitana, Chile y síguenos
+                        <p class="mb-2">¡Conéctate con nosotros! Visítanos en Pedro Fontova # 6, Santiago, Región Metropolitana, Chile y síguenos
                             en nuestras redes sociales para estar al tanto de todas las novedades y eventos.</p>
+                        <ul class="d-flex flex-row justify-content-evenly align-items-center">
+                            <li><a href="https://web.facebook.com/dahguz" target="_blank"><img src="./assets/img/facebookLogo.png"
+                                        alt="Facebook"></a></li>
+                            <li><a href="https://www.instagram.com/dahguzmania/" target="_blank"><img
+                                        src="./assets/img/instagram_logo.png" alt="Instagram"></a></li>
+                            <li><a href="https://www.twitter.com/dahguz" target="_blank"><img
+                                        src="./assets/img/x_logo.png" alt="X"></a></li>
+                        </ul>
                     </div>
                     <div class="col-4">
                         <p>Únete a nuestra comunidad y recibe las últimas noticias,
                             promociones y eventos directamente en tu bandeja de entrada.</p>
-                        <form>
+                        <form class="d-flex flex-row justify-content-evenly align-items-end">
                             <input type="email" class="form-control" id="emailNewsletterInput" placeholder="name@example.com">
                             <button type="button" class="btn btn-success">Enviar</button>
 
