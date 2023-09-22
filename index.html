@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paddel Court Web Site</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+   
+
 </head>
+
 <body>
     <div id="content">
 
-        <header class="d-flex flex-row justify-content-evenly">
+        <header class="d-flex  flex-row  justify-content-evenly flex-wrap flex-sm-wrap">
             <img src="./assets/img/banner_index.png" alt="Beneficios del Padel">
-            <div class="d-flex flex-column justify-content-evenly align-items-center w-30 text-center fw-bold">
+            <div class="banner-text d-flex flex-column justify-content-evenly align-items-center text-center fw-bold">
                 <p>El pádel no solo es un deporte, sino un estilo de vida que nos brinda innumerables beneficios.
                     Con cada movimiento en la cancha, fortalecemos nuestro cuerpo y mente.
                 </p>
-                <button type="button" class="btn btn-success">Ver Beneficios</button>
+                <a type="button" class="btn btn-success" href="#beneficios">Ver Beneficios</a>
             </div>
         </header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg">
             <img src="./assets/img/logo.png" alt="Logo Paddel Court">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <span class="material-symbols-rounded d-inline-block align-text-bottom" >home</span>
-                <span>Inicio</span>
-              </a>
-            </div>
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom" >rule</span>
-                    <span>Reglas</span>
-                </a>
-              </div>
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom">new_releases</span>
-                    <span>Consejos y Técnicas</span>
-                </a>
-              </div>
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom">sports_tennis</span>
-                    <span>Clases</span>
-                </a>
-              </div>
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom">imagesmode</span>
-                    <span>Galería</span>
-                </a>
-              </div>
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <span class="material-symbols-rounded d-inline-block align-text-bottom">alternate_email</span>
-                    <span>Contacto y Reservas</span>
-                </a>
-              </div>
-
-          </nav>
-        <section id="section1">
-            <article class="d-flex flex-row">
-                <div class="w-50 p-3">
-                    <img src="./assets/img/paddel_question.jpg" alt="Padel" class="object-fit-fill border rounded-2">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">home</span>
+                        <span>Inicio</span>
+                    </a>
                 </div>
-                <div class="w-50 p-3 d-flex flex-column justify-content-evenly">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./pages/rules.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">rule</span>
+                        <span>Reglas</span>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./pages/techniques.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">new_releases</span>
+                        <span>Consejos y Técnicas</span>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./pages/classes.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">sports_tennis</span>
+                        <span>Clases</span>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./pages/gallery.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">imagesmode</span>
+                        <span>Galería</span>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./pages/contact.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">alternate_email</span>
+                        <span>Contacto y Reservas</span>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+        <section id="section1">
+            <article class="d-flex flex-row flex-wrap flex-lg-wrap article_with_image m-2">
+                <div class="p-3 image_article">
+                    <img src="./assets/img/paddel_question.jpg" alt="Padel" class="object-fit-cover border rounded-2">
+                </div>
+                <div class="p-3 d-flex flex-column justify-content-evenly text_article">
                     <h2 class="text-center">¿Qué es el Pádel?</h2>
                     <p>El pádel es un apasionante deporte que combina elementos del tenis y del squash, jugado en una
                         cancha más pequeña y rodeada por paredes. Dos equipos, generalmente compuestos por dos jugadores
@@ -89,50 +103,147 @@
                 </div>
             </article>
         </section>
-        <div id="section2"></div>
-        <div id="section3"></div>
-        <div id="aside"></div>
+        <div id="section2" class="d-flex flex-column mt-4">
+            <h2 id="beneficios" class="text-center">Beneficios del Pádel</h2>
+            <div class="container text-center">
+                <div class="row  align-items-start d-flex flex-row justify-content-evenly">
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">groups</span>
+                            <p>Al ser un deporte jugado entre 2 y 4 jugadores, constantemente trabajas la comunicación, el
+                            respeto y relaciones interpersonales, por lo que <span class="fw-bold">tus habilidades sociales
+                                son
+                                trabajadas
+                                mediante el juego.</span></p>
+                        </div>
+                    </div>
+
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">mood</span>
+                            <p>La motivación, control de nervios y ansiedad son aspectos psicológicos que refuerzas con cada
+                                partida de pádel que juegas. <span class="fw-bold">El deporte genera alegría y fuerza
+                                    emocional.</span></p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span  class="material-symbols-rounded font_orange fz_40">relax</span>
+                            <p>Ayuda a la liberación de endorfinas, esto quiere decir que el jugarlo <span
+                                    class="fw-bold">ayuda a
+                                    reducir el estrés.</span>El pádel ayuda a
+                                desconectarte del mundo exterior y de pensamientos externos</p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">psychology</span>
+                            <p><span class="fw-bold">¿Sabías que el pádel trabaja tu mente?</span> Al ser un deporte que
+                                requiere
+                                concentración, tienes que estar presente y enfocado en tu fuerza, la dirección de la pelota,
+                                el
+                                ángulo de golpeo, la posición del otro, entre otros</p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">directions_run</span>
+                            <p>El pádel requiere el constante movimiento de todo el cuerpo y el cerebro trabaja
+                                constantemente
+                                comunicándole al cuerpo cómo moverse. <span class="fw-bold">Trabajando así la coordinación y
+                                    reflejos del jugador con
+                                    cada práctica.</span></p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">ecg</span>
+                            <p>Al estar en constante movimiento, el sistema cardiovascular trabaja en todo momento y el
+                                cerebro
+                                recibe mayor oxigenación. Practicar pádel <span class="fw-bold">ayuda a fortalecer el
+                                    corazón.</span></p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">pulmonology</span>
+                            <p>Estos ejercicios <span class="fw-bold">brindan mayor
+                                    oxigenación</span> al resto de órganos del cuerpo. En este deporte predomina la parte
+                                aeróbica, pero al
+                                trabajar las dos mejoras tu salud en varios puntos del cuerpo.</p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">sports_gymnastics</span>
+                            <p>Para los más pequeños es un deporte que requiere y fortalece <span class="fw-bold">la
+                                    coordinación,
+                                    la agilidad mental y el control de movimientos.</span></p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">elderly</span>
+                            <p>Hacer deporte <span class="fw-bold">ayuda a disminuir el envejecimiento de la musculatura y
+                                    articulaciones.</span> Puedes jugarlo con personas de todas las edades, creando una
+                                cultura de respeto
+                                y amistad.</p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-lg-4 col-11 m-2">
+                        <div class="card-body d-flex flex-column justify-content-evenly">
+                            <span class="material-symbols-rounded font_orange fz_40">hotel</span>
+                            <p>La práctica del pádel <span class="fw-bold">ayuda al cuerpo a descansar mejor</span> por las
+                                noches. Al trabajar el cuerpo
+                                entero, los músculos buscan relajarse al momento de dormir. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <footer class="d-flex flex-row align-items-center">
             <div class="container text-center">
                 <div class="row  align-items-start">
-                    <div class="col-4">
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-sm-3 mb-3">
                         <h3>Paddel Court</h3>
+                        <p>Guiados por la pasión por el pádel, creamos espacios donde la comunidad puede conectarse,
+                            mejorar su
+                            juego y disfrutar de la vida activa en un ambiente social</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-sm-3 mb-3">
                         <h3>Contáctenos</h3>
-                    </div>
-                    <div class="col-4">
-                        <h3>Newsletter</h3>
-                    </div>
-                    <div class="col-4">
-                        <p>Guiados por la pasión por el pádel, creamos espacios donde la comunidad puede conectarse, mejorar su
-                        juego y disfrutar de la vida activa en un ambiente social</p>
-                    </div>
-                    <div class="col-4">
-                        
-                        <p class="mb-2">¡Conéctate con nosotros! Visítanos en Pedro Fontova # 6, Santiago, Región Metropolitana, Chile y síguenos
+                        <p class="mb-2">¡Conéctate con nosotros! Visítanos en Pedro Fontova # 6, Santiago, Región
+                            Metropolitana, Chile y síguenos
                             en nuestras redes sociales para estar al tanto de todas las novedades y eventos.</p>
                         <ul class="d-flex flex-row justify-content-evenly align-items-center">
-                            <li><a href="https://web.facebook.com/dahguz" target="_blank"><img src="./assets/img/facebookLogo.png"
-                                        alt="Facebook"></a></li>
+                            <li><a href="https://web.facebook.com/dahguz" target="_blank"><img
+                                        src="./assets/img/facebookLogo.png" alt="Facebook"></a></li>
                             <li><a href="https://www.instagram.com/dahguzmania/" target="_blank"><img
                                         src="./assets/img/instagram_logo.png" alt="Instagram"></a></li>
                             <li><a href="https://www.twitter.com/dahguz" target="_blank"><img
                                         src="./assets/img/x_logo.png" alt="X"></a></li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-12 col-md-12 col-lg-4  mb-sm-3  mb-3">
+                        <h3>Newsletter</h3>
                         <p>Únete a nuestra comunidad y recibe las últimas noticias,
                             promociones y eventos directamente en tu bandeja de entrada.</p>
                         <form class="d-flex flex-row justify-content-evenly align-items-end">
-                            <input type="email" class="form-control" id="emailNewsletterInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="emailNewsletterInput"
+                                placeholder="name@example.com">
                             <button type="button" class="btn btn-success">Enviar</button>
 
                         </form>
                     </div>
+
                 </div>
-            <div>
+                <div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
