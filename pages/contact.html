@@ -1,112 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padel Court Web Site</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Paddel Court Web Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat:wght@300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
 </head>
 
-<body class="backgroundDarkBlue">
-    <!-- PRINCIPAL DIV CONTAINER -->
-    <div id="container">
-        <!-- HEADER -->
-        <header>
-            <img src="../assets/img/logo.png" alt="Logo Paddel Court">
-            <!-- CONTENEDOR DE LOGOS SOCIAL NETWORK-->
-            <div>
-                <ul>
-                    <li><a href="https://web.facebook.com/dahguz" target="_blank"><img class="logoSocialNetwork"
-                                src="../assets/img/facebookLogo.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/dahguzmania/" target="_blank"><img class="logoSocialNetwork"
-                                src="../assets/img/instagram_logo.png" alt="Instagram"></a></li>
-                </ul>
-            </div>
-            <h1>PADDEL COURT</h1>
-            <!-- MENU BAR -->
-            <nav class="backgroundDarkBlue">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./rules.html">Reglas</a></li>
-                    <li><a href="./techniques.html">Consejos y Técnicas</a></li>
-                    <li><a href="./classes.html">Clases</a></li>
-                    <li><a href="./gallery.html">Galería</a></li>
-                    <li><a href="#">Contacto y Reservas</a></li>
-                </ul>
-            </nav>
+<body>
+    <div id="content">
 
+        <header class="d-flex  flex-row  justify-content-evenly flex-wrap flex-sm-wrap">
+            <img src="../assets/img/banner_index.png" alt="Beneficios del Padel">
+            <div class="banner-text d-flex flex-column justify-content-evenly align-items-center text-center fw-bold">
+                <p>Ven y descubre un lugar donde la diversión y la excelencia se encuentran en un entorno que te
+                    enamorará desde el primer momento.
+                </p>
+                <a type="button" class="btn btn-success" href="#ubicacion">Nuestra Ubicación</a>
+            </div>
         </header>
-
-        <!-- CONTENIDO PRINCIPAL -->
-        <main>
-            <section>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26660.36460845853!2d-70.70710118602948!3d-33.35681988581691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c7c9726952d5%3A0x5aa7a64ff4cad591!2sPadel%20Plaza%20Norte!5e0!3m2!1ses-419!2scl!4v1693260930275!5m2!1ses-419!2scl"
-                    width="550" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="contact-form">
-                    <form action="#">
-                        <input type="text" placeholder="Nombre Completo">
-                        <input type="tel" placeholder="Teléfono de Contacto" >
-                        <input type="email" placeholder="Email" >
-                        <select name="subject">
-                            <option value="1">Duda sobre los cursos</option>
-                            <option value="2">Reservar una clase</option>
-                            <option value="3">Reservar para un juego</option>
-                        </select>
-                        <textarea></textarea>
-                        <button>Enviar</button>
-                    </form>
+        <nav class="navbar navbar-expand-lg">
+            <img src="../assets/img/logo.png" alt="Logo Paddel Court">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">home</span>
+                        <span>Inicio</span>
+                    </a>
                 </div>
-            </section>
-        </main>
-
-
-    </div>
-
-    <!-- PIE DE PAGINA-->
-    <footer class="backgroundDarkBlue lightBlue">
-        <!-- Sobre Nosotros -->
-        <div id="aboutUS">
-            <h3>Paddel Court</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos necessitatibus blanditiis sint
-                harum vel, labore molestiae fugiat quasi voluptates nesciunt tempore ut adipisci ea quod.</p>
-        </div>
-
-        <!-- Contactor -->
-        <div id="contactUs">
-            <h3>Contáctenos</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatum accusamus facilis quibusdam?
-                Sed, magni?</p>
-            <div>
-                <ul>
-                    <li><a href="https://web.facebook.com/dahguz" target="_blank"><img class="logoSocialNetwork"
-                                src="../assets/img/facebookLogo.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/dahguzmania/" target="_blank"><img class="logoSocialNetwork"
-                                src="../assets/img/instagram_logo.png" alt="Instagram"></a></li>
-                </ul>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./rules.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">rule</span>
+                        <span>Reglas</span>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./techniques.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">new_releases</span>
+                        <span>Consejos y Técnicas</span>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./classes.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">sports_tennis</span>
+                        <span>Clases</span>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./gallery.html">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">imagesmode</span>
+                        <span>Galería</span>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand active">
+                        <span class="material-symbols-rounded d-inline-block align-text-bottom">alternate_email</span>
+                        <span>Contacto y Reservas</span>
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <!-- News Letter -->
-        <div id="newsletter">
-            <h3>Newsletter</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolorem hic quibusdam! Culpa, harum
-                aliquid.</p>
-            <form>
-                <input type="text" placeholder="john@micorreo.com">
-                <button>Enviar</button>
+        </nav>
+       
+        <section id="section1" class="m-2">
+            <form class="d-flex flex-column align-items-center contact">
+                <input type="text" class="form-control w-75 m-2" placeholder="Nombre Completo">
+                <input type="tel" class="form-control  w-75 m-2" placeholder="Teléfono de Contacto">
+                <input type="email" class="form-control  w-75 m-2" placeholder="Email">
+                <select name="subject" class="form-control  w-75 m-2">
+                    <option value="0" selected>Seleccione una opción</option>
+                    <option value="1">Duda sobre los cursos</option>
+                    <option value="2">Reservar una clase</option>
+                    <option value="3">Reservar para un juego</option>
+                </select>
+                <textarea class="form-control w-75 m-2" rows="5" placeholder="Comentarios"></textarea>
+                <button type="button" class="btn btn-success">Enviar</button>
             </form>
-        </div>
+            
+        </section>
+        <section id="section2" class="m-2 text-center">
+            <iframe id="ubicacion" class="w-75"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26660.36460845853!2d-70.70710118602948!3d-33.35681988581691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c7c9726952d5%3A0x5aa7a64ff4cad591!2sPadel%20Plaza%20Norte!5e0!3m2!1ses-419!2scl!4v1693260930275!5m2!1ses-419!2scl"
+                width="550" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer class="d-flex flex-row align-items-center">
+            <div class="container text-center">
+                <div class="row  align-items-start">
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-sm-3 mb-3">
+                        <h3>Paddel Court</h3>
+                        <p>Guiados por la pasión por el pádel, creamos espacios donde la comunidad puede conectarse,
+                            mejorar su
+                            juego y disfrutar de la vida activa en un ambiente social</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 mb-sm-3 mb-3">
+                        <h3>Contáctenos</h3>
+                        <p class="mb-2">¡Conéctate con nosotros! Visítanos en Pedro Fontova # 6, Santiago, Región
+                            Metropolitana, Chile y síguenos
+                            en nuestras redes sociales para estar al tanto de todas las novedades y eventos.</p>
+                        <ul class="d-flex flex-row justify-content-evenly align-items-center">
+                            <li><a href="https://web.facebook.com/dahguz" target="_blank"><img
+                                        src="../assets/img/facebookLogo.png" alt="Facebook"></a></li>
+                            <li><a href="https://www.instagram.com/dahguzmania/" target="_blank"><img
+                                        src="../assets/img/instagram_logo.png" alt="Instagram"></a></li>
+                            <li><a href="https://www.twitter.com/dahguz" target="_blank"><img
+                                        src="../assets/img/x_logo.png" alt="X"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4  mb-sm-3  mb-3">
+                        <h3>Newsletter</h3>
+                        <p>Únete a nuestra comunidad y recibe las últimas noticias,
+                            promociones y eventos directamente en tu bandeja de entrada.</p>
+                        <form class="d-flex flex-row justify-content-evenly align-items-end">
+                            <input type="email" class="form-control" id="emailNewsletterInput"
+                                placeholder="name@example.com">
+                            <button type="button" class="btn btn-success">Enviar</button>
 
-    </footer>
+                        </form>
+                    </div>
 
+                </div>
+                <div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

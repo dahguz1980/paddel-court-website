@@ -77,6 +77,17 @@ a {
     color:aliceblue
 }
 
+.video {
+    width: 75%;
+    height: 400px;
+    margin: 10px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* END GENERAL STYLES */
 
@@ -145,6 +156,19 @@ a {
         height: 240px;
     }
 
+    .img-thumbnail, .div-thumbnail {
+        height: 150px;
+        width: 150px;
+    }
+    
+
+}
+
+@media screen and (min-width: 576px) {
+    .img-thumbnail, .div-thumbnail {
+        height: 250px;
+        width: 250px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -183,6 +207,11 @@ a {
         height: 300px;
     }
 
+    .img-thumbnail, .div-thumbnail {
+        height: 400px;
+        width: 400px;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -194,6 +223,11 @@ a {
 
     .article_with_image .text_article {
         width: 50%;
+    }
+
+    .img-thumbnail, .div-thumbnail {
+        height: 500px;
+        width: 500px;
     }
 
 }
@@ -284,7 +318,7 @@ footer ul img {
 }
 
 footer .form-control,
-.form-control:focus {
+footer .form-control:focus {
     border: 0px;
     border-bottom: 1px solid aliceblue;
     height: 30px;
@@ -312,3 +346,35 @@ footer p {
 }
 
 /*END FOOTER STYLE*/
+
+/** CARD STYLES */
+
+.card-classes {
+    height: 600px;
+    border: 0;
+    background-color: aliceblue;
+}
+
+.card-classes img {
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/** CONTACT STYLES **/
+
+.contact .form-control,
+.contact .form-control:focus {
+    border: 0px;
+    border-bottom: 1px solid #03021d;
+    margin-top: 8px;
+    color: #03021d;
+    width: 60%;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 0%;
+    background-color: aliceblue;
+}
+
+
+
