@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './vendors/bootstrap';
+@import './vendors/animate';
 @import './base/base';
 @import './layout/grid';
 @import './layout/header';
@@ -12,5 +13,3 @@
 @import './components/buttons';
 @import './components/card';
 @import './components/table';
-
-

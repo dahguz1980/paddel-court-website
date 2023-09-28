@@ -1,0 +1,139 @@
+@media screen and (min-width: 320px) {
+    #content {
+        display: grid;
+        grid-template-areas: 
+            "nav"
+            "header"
+            "section1"
+            "section2"
+            "footer ";
+        min-height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 450px 0.5fr 1.5fr 400px;
+    }
+
+    .banner-text {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    nav img {
+        width: 250px;
+        margin-bottom: 0;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+        background-color: #03021d;
+        text-align: center;
+    }
+
+    .navbar-collapse>.container-fluid {
+        margin-bottom: 15px;
+    }
+
+    /* Setting the stroke to green using rgb values (0, 128, 0) */
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240, 248, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .article_with_image .image_article {
+        width: 100%;
+    }
+    
+    .article_with_image .text_article {
+        width: 100%;
+    }
+
+    .card {
+        height: 240px;
+    }
+
+    .img-thumbnail, .div-thumbnail {
+        height: 150px;
+        width: 150px;
+    }
+    
+
+}
+
+@media screen and (min-width: 576px) {
+    .img-thumbnail, .div-thumbnail {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #content {
+        display: grid;
+        grid-template-areas: 
+            "nav       header"
+            "nav        section1"
+            "nav        section2"
+            "footer     footer";
+        min-height: 100vh;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 225px 0.5fr 1fr 180px;
+    }
+
+    .banner-text {
+        width: 60%;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        font-size: 15px;
+        flex-direction: column;
+    }
+
+    nav img {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+    .navbar-collapse {
+        text-align: left;
+    }
+    
+    .card {
+        height: 300px;
+    }
+
+    .img-thumbnail, .div-thumbnail {
+        height: 400px;
+        width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+
+    .article_with_image .image_article {
+        width: 50%;
+    }
+
+    .article_with_image .text_article {
+        width: 50%;
+    }
+
+    .img-thumbnail, .div-thumbnail {
+        height: 500px;
+        width: 500px;
+    }
+
+}
+
+
