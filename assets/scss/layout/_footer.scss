@@ -1,0 +1,48 @@
+footer {
+    grid-area: footer;
+    background-color: $blue;
+    border-top: 5px solid $green;
+    color: $aliceblue;
+    font-size: 11px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    img {
+        height: 20px;
+    }
+
+    .btn {
+        height: 30px;
+        font-size: 11px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .form-control {
+        border: 0px;
+        border-bottom: 1px solid $aliceblue;
+        height: 30px;
+        margin-top: 8px;
+        background-color: $blue;
+        color: $aliceblue;
+        width: 60%;
+        box-shadow: none;
+        font-size: 11px;
+        text-align: center;
+        border-radius: 0%;
+
+        &:focus {
+            @extend .form-control;
+        }
+
+        &::placeholder {
+            color: $aliceblue;
+        }
+    }
+}

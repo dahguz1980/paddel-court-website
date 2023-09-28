@@ -1,20 +1,52 @@
-body {
-    
-    
-    font-size: 14px;
-    @each $heading in 1,2,3{
 
-        h#{$heading} { 
-            text-transform: uppercase;
-        }    
+// HEADING STYLES
+@each $heading in 1,2,3{
+
+    h#{$heading} { 
+        text-transform: uppercase;
+    }    
+}
+
+
+// BANNER FOR AL PAGES
+.banner-text {
+    width: 80%;
+    padding: 5px;
+
+    @include media-query($mobile-width) {
+        width: 80%;
     }
 
-    .banner-text {
-        width: 80%;
-        padding: 5px;
-
-        .btn {
-            text-transform: uppercase;
-        }
+    @include media-query($tablet-width) {
+        width: 60%;
     }
 }
+
+// SECTIONS STYLES
+
+@for $i from 1 through 3 {
+    #section#{$i} {
+        @include section-variant('section#{$i}');
+    }
+}
+
+// ARTICLE STYLES
+
+.article_with_image {
+    
+    .image_article {
+        @include  media-query($mobile-width) {
+            width: 100%;
+        }
+
+        @include media-query($desktop-width) {
+            width: 50%;
+        }
+    
+    }
+
+    .text_article {
+        @extend .image_article
+    }
+}
+

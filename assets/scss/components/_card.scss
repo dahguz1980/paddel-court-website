@@ -1,0 +1,18 @@
+// CARD STYLES 
+.card {
+    .font_orange {
+        color: $orange;
+    }
+
+    .fz_40 {
+        font-size: 40px;
+    }
+
+    @include media-query($mobile-width) {        
+        height: 240px;
+    }
+
+    @include media-query($tablet-width) {
+        height: 300px;
+    }
+}

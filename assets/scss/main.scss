@@ -1,7 +1,16 @@
 @import './utils/variables';
-
+@import './utils/mixins';
 @import './vendors/bootstrap';
 @import './base/base';
-@import './base/typography';
+@import './layout/grid';
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/footer';
+@import './pages/gallery';
+@import './pages/tecniques';
+@import './pages/contact';
+@import './components/buttons';
+@import './components/card';
+@import './components/table';
 
 

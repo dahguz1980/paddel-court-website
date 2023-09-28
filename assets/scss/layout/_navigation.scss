@@ -1,0 +1,80 @@
+nav {
+    grid-area: nav;
+    background-color: $blue;
+
+    img {
+        @include media-query($mobile-width) {  
+            width: 250px;
+            margin-bottom: 0;
+        }
+        @include media-query($tablet-width) {  
+            width: 250px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.navbar {
+    padding-top: 0px;
+
+    &-brand {
+        color: $aliceblue;
+        font: inherit;
+        font-size: inherit;
+    }
+
+    &-brand:focus {
+        @extend .navbar-brand;
+    }
+
+    &-brand:hover {
+        @extend .navbar-brand;
+    }
+
+    .container-fluid {
+        .active {
+            color: $green;
+        }
+    }
+
+    .navbar-collapse {
+        @include media-query($mobile-width) {
+            flex-direction: column;
+            background-color: #03021d;
+            text-align: center;
+
+            .container-fluid {
+                margin-bottom: 15px;
+            }   
+        }
+
+        @include media-query($tablet-width) {
+            text-align: left;
+        }
+    }
+
+    
+
+    @include media-query($mobile-width) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+
+        .navbar-toggler {
+            border: 0;
+        }
+
+        .custom-toggler {
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32 xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240, 248, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+        }
+    }
+
+    @include media-query($tablet-width) {
+        justify-content: flex-start;
+        font-size: 15px;
+        flex-direction: column;
+    }
+
+}

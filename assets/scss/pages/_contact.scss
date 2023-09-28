@@ -1,0 +1,18 @@
+.contact {
+    .form-control 
+    {
+        border: 0px;
+        border-bottom: 1px solid $blue;
+        margin-top: 8px;
+        color: $blue;
+        width: 60%;
+        box-shadow: none;
+        font-size: 14px;
+        border-radius: 0%;
+        background-color: $aliceblue; 
+
+        &:focus {
+            @extend .form-control;
+        }
+    }
+}

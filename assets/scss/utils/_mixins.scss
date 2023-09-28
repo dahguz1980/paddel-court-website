@@ -1,0 +1,33 @@
+@mixin section-variant($grid-name) {
+    grid-area: $grid-name;
+    
+    article 
+    {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }      
+}
+
+@mixin media-query($breakpoint) {
+    @if $breakpoint == $mobile-width {
+        @media (min-width: #{$mobile-width}) {
+            @content;
+          }
+    } @else if $breakpoint == $mobile-vertical-width {
+        @media (min-width: #{mobile-vertical-width}) {
+            @content;
+          }
+    } @else if $breakpoint == $tablet-width {
+        @media (min-width: #{$tablet-width}) {
+            @content;
+        }
+    } @else if $breakpoint == $desktop-width {
+        @media (min-width: #{$desktop-width}) {
+            @content;
+        }
+        
+    }
+}
+
