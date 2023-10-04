@@ -12031,6 +12031,9 @@ footer .btn {
 footer p {
   margin: 0;
 }
+footer h3, footer .h3 {
+  font-size: 14px;
+}
 footer .form-control, footer .contact .form-control:focus, .contact footer .form-control:focus, footer .form-control:focus {
   border: 0px;
   border-bottom: 1px solid aliceblue;

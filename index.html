@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paddel Court Web Site</title>
+    <meta name="description"
+        content="Descubre la mejor experiencia de pádel en nuestra empresa. Ofrecemos canchas de alta calidad, clases de pádel personalizadas y un ambiente amigable para jugadores de todos los niveles. ¡Únete a nosotros y mejora tu juego de pádel hoy mismo!">
+    <meta name="keywords" content="pádel, canchas de pádel, clases de pádel, torneos de pádel, equipamiento de pádel, club de pádel, deporte, raquetas, juego de pádel">
+    <title>Paddel Court Web Site | ¡Paddel, Set, Match! </title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Montserrat:wght@300;600;700&display=swap"
         rel="stylesheet">
@@ -14,7 +18,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="./assets/css/styles.css">
-   
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "SportsTeam",
+          "name": "Paddel Court",
+          "description": "Descubre la mejor experiencia de pádel en nuestra empresa. Ofrecemos canchas de alta calidad, clases de pádel personalizadas y un ambiente amigable para jugadores de todos los niveles. ¡Únete a nosotros y mejora tu juego de pádel hoy mismo!",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Pedro Fontova # 6",
+            "addressLocality": "Santiago",
+            "addressRegion": "RM",
+            "addressCountry": "Chile"
+          },
+          "telephone": "+56963212345",
+          "url": "https://dahguz1980.github.io/paddel-court-website/",
+          "image": "https://dahguz1980.github.io/paddel-court-website/assets/img/logo.png",
+          "openingHours": "Mo-Fr 09:00-23:00",
+          "priceRange": "30000 CLP - 40000 CLP",
+          "sameAs": [
+            "https://web.facebook.com/dahguz",
+            "https://www.instagram.com/dahguzmania/",
+            "https://www.twitter.com/dahguz"
+          ]
+        }
+    </script>
 </head>
 
 <body>
@@ -23,7 +52,8 @@
         <header class="d-flex  flex-row  justify-content-evenly flex-wrap flex-sm-wrap">
             <img src="./assets/img/banner_index.png" alt="Beneficios del Padel">
             <div class="banner-text d-flex flex-column justify-content-evenly align-items-center">
-                <p class="fw-bold text-center">El pádel no solo es un deporte, sino un estilo de vida que nos brinda innumerables beneficios.
+                <p class="fw-bold text-center">El pádel no solo es un deporte, sino un estilo de vida que nos brinda
+                    innumerables beneficios.
                     Con cada movimiento en la cancha, fortalecemos nuestro cuerpo y mente.
                 </p>
                 <a type="button" class="btn btn-success" href="#beneficios">Ver Beneficios</a>
@@ -102,32 +132,35 @@
                 </div>
             </article>
         </section>
-        <section id="section2" class="d-flex flex-column mt-1">
-            <h2 id="beneficios" class="text-center">Beneficios del Pádel</h2>
+        <section id="section2" class="d-flex flex-column">
+            <h2 id="beneficios" class="text-center m-xl-5 m-lg-4 m-3">Beneficios del Pádel</h2>
             <div class="container text-center">
                 <div class="row  align-items-start d-flex flex-row justify-content-evenly">
                     <div class="card col-xl-3 col-lg-4 col-11 m-2">
                         <div class="hvr-overline-from-left card-body d-flex flex-column justify-content-evenly">
                             <span class="material-symbols-rounded font_orange fz_40">groups</span>
-                            <p>Al ser un deporte jugado entre 2 y 4 jugadores, constantemente trabajas la comunicación, el
-                            respeto y relaciones interpersonales, por lo que <span class="fw-bold">tus habilidades sociales
-                                son
-                                trabajadas
-                                mediante el juego.</span></p>
+                            <p>Al ser un deporte jugado entre 2 y 4 jugadores, constantemente trabajas la comunicación,
+                                el
+                                respeto y relaciones interpersonales, por lo que <span class="fw-bold">tus habilidades
+                                    sociales
+                                    son
+                                    trabajadas
+                                    mediante el juego.</span></p>
                         </div>
                     </div>
 
                     <div class="card col-xl-3 col-lg-4 col-11 m-2">
                         <div class="hvr-overline-from-left card-body d-flex flex-column justify-content-evenly">
                             <span class="material-symbols-rounded font_orange fz_40">mood</span>
-                            <p>La motivación, control de nervios y ansiedad son aspectos psicológicos que refuerzas con cada
+                            <p>La motivación, control de nervios y ansiedad son aspectos psicológicos que refuerzas con
+                                cada
                                 partida de pádel que juegas. <span class="fw-bold">El deporte genera alegría y fuerza
                                     emocional.</span></p>
                         </div>
                     </div>
                     <div class="card col-xl-3 col-lg-4 col-11 m-2">
                         <div class="hvr-overline-from-left card-body d-flex flex-column justify-content-evenly">
-                            <span  class="material-symbols-rounded font_orange fz_40">relax</span>
+                            <span class="material-symbols-rounded font_orange fz_40">relax</span>
                             <p>Ayuda a la liberación de endorfinas, esto quiere decir que el jugarlo <span
                                     class="fw-bold">ayuda a
                                     reducir el estrés.</span>El pádel ayuda a
@@ -139,7 +172,8 @@
                             <span class="material-symbols-rounded font_orange fz_40">psychology</span>
                             <p><span class="fw-bold">¿Sabías que el pádel trabaja tu mente?</span> Al ser un deporte que
                                 requiere
-                                concentración, tienes que estar presente y enfocado en tu fuerza, la dirección de la pelota,
+                                concentración, tienes que estar presente y enfocado en tu fuerza, la dirección de la
+                                pelota,
                                 el
                                 ángulo de golpeo, la posición del otro, entre otros</p>
                         </div>
@@ -149,7 +183,8 @@
                             <span class="material-symbols-rounded font_orange fz_40">directions_run</span>
                             <p>El pádel requiere el constante movimiento de todo el cuerpo y el cerebro trabaja
                                 constantemente
-                                comunicándole al cuerpo cómo moverse. <span class="fw-bold">Trabajando así la coordinación y
+                                comunicándole al cuerpo cómo moverse. <span class="fw-bold">Trabajando así la
+                                    coordinación y
                                     reflejos del jugador con
                                     cada práctica.</span></p>
                         </div>
@@ -167,7 +202,8 @@
                         <div class="hvr-overline-from-left card-body d-flex flex-column justify-content-evenly">
                             <span class="material-symbols-rounded font_orange fz_40">pulmonology</span>
                             <p>Estos ejercicios <span class="fw-bold">brindan mayor
-                                    oxigenación</span> al resto de órganos del cuerpo. En este deporte predomina la parte
+                                    oxigenación</span> al resto de órganos del cuerpo. En este deporte predomina la
+                                parte
                                 aeróbica, pero al
                                 trabajar las dos mejoras tu salud en varios puntos del cuerpo.</p>
                         </div>
@@ -183,7 +219,8 @@
                     <div class="card col-xl-3 col-lg-4 col-11 m-2">
                         <div class="hvr-overline-from-left card-body d-flex flex-column justify-content-evenly">
                             <span class="material-symbols-rounded font_orange fz_40">elderly</span>
-                            <p>Hacer deporte <span class="fw-bold">ayuda a disminuir el envejecimiento de la musculatura y
+                            <p>Hacer deporte <span class="fw-bold">ayuda a disminuir el envejecimiento de la musculatura
+                                    y
                                     articulaciones.</span> Puedes jugarlo con personas de todas las edades, creando una
                                 cultura de respeto
                                 y amistad.</p>
