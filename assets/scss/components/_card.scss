@@ -40,10 +40,12 @@
 
     @include media-query($mobile-width) {        
         height: 240px;
+        width: 400;
     }
 
     @include media-query($tablet-width) {
-        height: 300px;
+        height: 200px;
+        width: 500px;
     }
 }
 

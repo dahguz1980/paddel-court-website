@@ -11910,6 +11910,10 @@ h3, .h3 {
     width: 50%;
   }
 }
+.article_with_image .image_article img, .article_with_image .text_article img {
+  max-width: 600px;
+  max-height: 700px;
+}
 #content {
   display: grid;
   min-height: 100vh;
@@ -11925,7 +11929,7 @@ h3, .h3 {
   #content {
     grid-template-areas: "nav       header" "nav        section1" "nav        section2" "footer     footer";
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 225px 0.5fr 1fr 180px;
+    grid-template-rows: 225px 0.5fr 1.5fr 180px;
   }
 }
 
@@ -12156,11 +12160,13 @@ footer .form-control::placeholder, footer .contact .form-control:focus::placehol
 @media (min-width: 320px) {
   .card {
     height: 240px;
+    width: 400;
   }
 }
 @media (min-width: 992px) {
   .card {
-    height: 300px;
+    height: 200px;
+    width: 500px;
   }
 }
 
