@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /assets
+Disallow: /pages
+Allow: /pages/contact.html
+Allow: /pages/classes.html
+Allow: /pages/gallery.html
+Allow: /pages/rules.html
+Allow: /pages/tecniques.html
+Allow: /index.html
