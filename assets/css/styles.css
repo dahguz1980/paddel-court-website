@@ -11918,7 +11918,6 @@ h3, .h3 {
 }
 .article_with_image .image_article img, .article_with_image .text_article img {
   max-width: 600px;
-  max-height: 700px;
 }
 #content {
   display: grid;
@@ -12191,6 +12190,10 @@ footer .form-control::placeholder, footer .contact .form-control:focus::placehol
 .table-dark th {
   background-color: #03021d;
   color: aliceblue;
+}
+
+.table > tbody {
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=styles.css.map */
